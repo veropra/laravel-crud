@@ -1,14 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-namespace App\Product;
 
+use App\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
   public function index() {
-    $products=Product::All();
-    return 'ciao';
+    $products = Product::all();
+    dd($products);
+    return view('prodotti', compact('products'));
   }
 }
