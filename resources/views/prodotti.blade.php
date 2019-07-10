@@ -1,1 +1,3 @@
-ciao a tutti, questa è la pagina prodotti
+  id: {{$product->id}} - nome : {{ $product->name }}
+  - descrizione: {{$product->description}} - prezzo: {{$product->price}}
+  <br>
